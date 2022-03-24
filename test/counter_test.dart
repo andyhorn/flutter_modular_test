@@ -5,7 +5,7 @@ import 'package:flutter_modular_test/main.dart';
 import 'package:modular_test/modular_test.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
+  testWidgets('should instantiate', (WidgetTester tester) async {
     initModule(AppModule());
     const Counter counter = Counter();
     await tester.pumpWidget(const MaterialApp(
